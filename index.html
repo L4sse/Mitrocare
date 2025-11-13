@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miloš Mitrović | Functional Personal Training in Maribor & Graz</title>
+    <meta name="description" content="Ganzheitliches Training für Stärke, Haltung und Mobilität. Persönliches Coaching in Maribor, Graz oder online.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #000; }
+        a { text-decoration: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); z-index: 1000; padding: 1rem 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; }
+        nav li { margin: 0 1rem; }
+        nav a { color: #00A8CC; font-weight: 700; transition: color 0.3s; }
+        nav a:hover { color: #FF9500; }
+        
+        /* Hero */
+        #hero { height: 100vh; background: url('https://source.unsplash.com/random/1920x1080/?functional-fitness') center/cover; display: flex; align-items: center; justify-content: center; text-align: center; color: #FFF; }
+        #hero .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        #hero .hero-content p { font-size: 1.5rem; margin-bottom: 2rem; }
+        .btn { padding: 1rem 2rem; border-radius: 5px; font-weight: 700; transition: all 0.3s; display: inline-block; margin: 0.5rem; }
+        .btn-primary { background: #FF9500; color: #FFF; }
+        .btn-primary:hover { background: #00A8CC; }
+        .btn-secondary { border: 2px solid #FFF; color: #FFF; }
+        .btn-secondary:hover { background: #FFF; color: #000; }
+        
+        /* Sections */
+        section { padding: 5rem 0; }
+        section:nth-child(even) { background: #F8F9FA; }
+        h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #00A8CC; }
+        
+        /* Grid for Benefits/Services */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: #FFF; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+        .card i { font-size: 3rem; color: #FF9500; margin-bottom: 1rem; }
+        .card h3 { margin-bottom: 1rem; color: #00A8CC; }
+        
+        /* About */
+        #about { text-align: center; }
+        #about img { width: 200px; height: 200px; border-radius: 50%; margin-bottom: 2rem; object-fit: cover; }
+        #about p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; }
+        
+        /* Philosophy */
+        #philosophy ul { max-width: 800px; margin: 0 auto; list-style: none; }
+        #philosophy li { margin-bottom: 1rem; padding-left: 2rem; position: relative; }
+        #philosophy li i { position: absolute; left: 0; color: #FF9500; }
+        
+        /* Pricing */
+        #pricing .grid { text-align: center; }
+        #pricing .card { border: 2px solid #00A8CC; }
+        
+        /* Testimonials */
+        #testimonials .grid { text-align: left; }
+        #testimonials .card { font-style: italic; }
+        
+        /* Footer CTA */
+        #cta { text-align: center; background: #00A8CC; color: #FFF; }
+        #cta .btn { background: #FF9500; color: #FFF; margin: 1rem; }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            #hero .hero-content h1 { font-size: 2.5rem; }
+            #hero .hero-content p { font-size: 1.2rem; }
+            nav ul { flex-direction: column; }
+            .grid { grid-template-columns: 1fr; }
+        }
+        
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#cta">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="hero">
+        <div class="hero-content container">
+            <h1>Build Strength. Restore Balance. Move Freely.</h1>
+            <p>Functional Personal Training to fix imbalances, improve posture and increase mobility. In Maribor, Graz or online.</p>
+            <a href="https://wa.me/38630290567" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Start your training today</a>
+            <a href="#about" class="btn btn-secondary">Learn more</a>
+        </div>
+    </section>
+    
+    <section id="benefits">
+        <div class="container">
+            <h2>Why Choose Miloš?</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Personalized Coaching</h3>
+                    <p>Individuelle Pläne basierend auf deiner Analyse. Kein One-Size-Fits-All – wir passen alles an dein Leben an.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Correcting Imbalances & Posture</h3>
+                    <p>Identifiziere und behebe Dysbalancen für schmerzfreiere Bewegungen. Ideal für Sitzen im Alltag.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Hands-On Muscle Release</h3>
+                    <p>Direkte Arbeit an Blockaden und Faszien für sofortige Erleichterung und bessere Ausrichtung.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Functional Strength for Real Life</h3>
+                    <p>Baue Kraft auf, die du im Alltag nutzt – nicht fürs Ego, sondern für echte Stabilität.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Progress Tracking & Mobility Focus</h3>
+                    <p>Langfristige Tools und Checks für dauerhafte Verbesserungen in Mobilität und Haltung.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/38630290567" class="btn btn-primary">Book your first session</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Miloš Mitrović</h2>
+            <img src="https://source.unsplash.com/random/300x300/?portrait-man" alt="Miloš Mitrović, Personal Trainer">
+            <p>Mit über 10 Jahren Erfahrung als Trainer im Wasser- und Polosport bringe ich Expertise aus Maribor und Graz mit. Ich kombiniere funktionales Training mit manueller Therapie für einen ganzheitlichen Ansatz. Mein Stil ist ruhig und professionell: Wir lösen Blockaden, verbessern Haltung und bauen nachhaltige Stärke auf – fernab von Bodybuilding-Hype. Lass uns zusammen deinen Körper ins Gleichgewicht bringen.</p>
+        </div>
+    </section>
+    
+    <section id="philosophy">
+        <div class="container">
+            <h2>My Philosophy & Approach</h2>
+            <ul>
+                <li><i class="fas fa-network-wired"></i> Der Körper als vernetztes System: Alles hängt zusammen – von Haltung bis Mobilität.</li>
+                <li><i class="fas fa-running"></i> Funktionale Bewegungen zuerst: Statt Isolation trainieren wir reale Patterns für den Alltag.</li>
+                <li><i class="fas fa-tools"></i> Blockaden lösen, dann aufbauen: Hands-On-Arbeit vor Krafttraining für sichere Fortschritte.</li>
+                <li><i class="fas fa-search"></i> Individuelle Analyse: Jeder Plan startet mit deiner persönlichen Bewertung und Zielen.</li>
+            </ul>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>1:1 Personal Training</h3>
+                    <p>60-min Sessions in Maribor oder Graz. Fokus: Functional Fitness & Strength Conditioning für reale Stärke.</p>
+                    <p><strong>€50/Session</strong></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bicycle"></i>
+                    <h3>Mobility & Flexibility Coaching</h3>
+                    <p>Ge zielte Übungen für mehr Bewegungsfreiheit, inkl. Home-Workouts und tägliche Routinen.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-ruler-vertical"></i>
+                    <h3>Posture Correction & Alignment</h3>
+                    <p>Korrekturen für Rücken- und Nacken-Probleme durch langes Sitzen – schmerzfrei und nachhaltig.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Muscle Release / Hands-On Therapy</h3>
+                    <p>Direkte Faszien- und Blockaden-Arbeit für sofortige Entlastung und bessere Körпераusrichtung.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-weight-hanging"></i>
+                    <h3>Strength & Conditioning</h3>
+                    <p>Aufbau von Stabilität und Ausdauer mit funktionalen Drills – für den Alltag optimiert.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-video"></i>
+                    <h3>Online Coaching</h3>
+                    <p>Video-Sessions und Form-Checks via App. Flexibel, weltweit – ideal für Berufstätige.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/38630290567" class="btn btn-primary">Get Started Online</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing">
+        <div class="container">
+            <h2>Simple & Transparent Pricing</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Single Session (60 min)</h3>
+                    <p class="price">€50</p>
+                    <p>In Maribor, Graz oder online – perfekt zum Ausprobieren.</p>
+                </div>
+                <div class="card">
+                    <h3>8-Session Package</h3>
+                    <p class="price">€350</p>
+                    <p>(Sparen Sie 30%) Für kontinuierliche Fortschritte und Tracking.</p>
+                </div>
+                <div class="card">
+                    <h3>Custom Training Plan</h3>
+                    <p class="price">On Request</p>
+                    <p>Inkl. detaillierter Analyse und personalisierter Programme.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem;">Alle Programme sind maßgeschneidert. Starte mit einer kostenlosen Beratung per WhatsApp.</p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/38630290567" class="btn btn-primary">Request Custom Plan</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="grid">
+                <div class="card">
+                    <p>"Nach 4 Wochen weniger Nackenschmerzen und bessere Haltung – endlich schmerzfrei lernen!"</p>
+                    <cite>– Anna, 28, Studentin</cite>
+                </div>
+                <div class="card">
+                    <p>"Miloš hat meine Imbalancen gefixt. Mehr Energie im Alltag, ohne Gym-Drama."</p>
+                    <cite>– Tom, 35, Berufstätiger</cite>
+                </div>
+                <div class="card">
+                    <p>"Online-Coaching hat mir Mobilität zurückgegeben. Ruhig, effektiv, transformierend."</p>
+                    <cite>– Sara, 42, Remote Worker</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cta">
+        <div class="container">
+            <h2>Ready to Start Your Transformation?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Nimm den ersten Schritt zu mehr Stärke und Freiheit.</p>
+            <a href="https://wa.me/38630290567" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp: +386 30 290 567</a>
+            <a href="mailto:mitrocare@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email: mitrocare@gmail.com</a>
+            <a href="https://instagram.com/mitrocare" class="btn btn-primary"><i class="fab fa-instagram"></i> Instagram: @mitrocare</a>
+        </div>
+    </section>
+    
+    <footer style="text-align: center; padding: 1rem; background: #000; color: #FFF; font-size: 0.9rem;">
+        <p>&copy; 2025 Miloš Mitrović | Functional Training for Life | Maribor | Graz | Online</p>
+    </footer>
+</body>
+</html>
